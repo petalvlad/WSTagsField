@@ -157,8 +157,8 @@ open class WSTagView: UIView {
     // MARK: - Attributed Text
 
     fileprivate func updateLabelText() {
-        // Unselected shows "[displayText]," and selected is "[displayText]"
-        textLabel.text = displayText + displayDelimiter
+        // Unselected shows "#[displayText]" and selected is "[displayText]"
+        textLabel.text = displayDelimiter + displayText
         // Expand Label
         let intrinsicSize = self.intrinsicContentSize
         frame = CGRect(x: 0, y: 0, width: intrinsicSize.width, height: intrinsicSize.height)
